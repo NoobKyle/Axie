@@ -2,11 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require('./auth.json');
 
+//Print to console the log.
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login(auth.token);
+//Keep the bot secret code on heroku.
+client.login(process.env.BOT_TOKEN);
 
 
 client.on('message', msg => {
