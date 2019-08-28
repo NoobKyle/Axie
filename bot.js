@@ -31,6 +31,6 @@ client.on('message', msg=>{
 
 client.on('message', msg=>{
     if(msg.content ==="go on Axie"){
-        msg.reply('Kyle likes Tshego' + ' please dont be mad at me');
+        msg.reply('I Love Code Club, its amazing');
     }
 });
